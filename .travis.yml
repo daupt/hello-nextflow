@@ -1,0 +1,10 @@
+sudo: required
+jdk:
+- openjdk8
+services:
+- docker
+install:
+- sudo apt-get -qq update
+- sudo apt-get -qq -y install graphviz
+script:
+- bash ./nextflow run .
